@@ -1,0 +1,105 @@
+{
+  "nama_model": "DNN (MLPClassifier 64-32-16)",
+  "fitur": [
+    "Rata-rata Lama Sekolah Penduduk 15+ (Tahun)",
+    "Pengeluaran per Kapita Disesuaikan (Ribu Rupiah/Orang/Tahun)",
+    "Indeks Pembangunan Manusia",
+    "Umur Harapan Hidup (Tahun)",
+    "Persentase rumah tangga yang memiliki akses terhadap sanitasi layak",
+    "Persentase rumah tangga yang memiliki akses terhadap air minum layak",
+    "Tingkat Pengangguran Terbuka",
+    "Tingkat Partisipasi Angkatan Kerja",
+    "PDRB atas Dasar Harga Konstan menurut Pengeluaran (Rupiah)"
+  ],
+  "kelas": [
+    0,
+    1
+  ],
+  "label": {
+    "0": "Tidak Miskin",
+    "1": "Miskin"
+  },
+  "metrik": {
+    "accuracy": 0.8155,
+    "f1_macro": 0.7208,
+    "f1_baseline": 0.4691,
+    "n_test": 103
+  },
+  "confusion_matrix": [
+    [
+      72,
+      19
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "rentang_fitur": {
+    "Rata-rata Lama Sekolah Penduduk 15+ (Tahun)": [
+      1.42,
+      12.83
+    ],
+    "Pengeluaran per Kapita Disesuaikan (Ribu Rupiah/Orang/Tahun)": [
+      3976.0,
+      23888.0
+    ],
+    "Indeks Pembangunan Manusia": [
+      32.84,
+      87.18
+    ],
+    "Umur Harapan Hidup (Tahun)": [
+      55.43,
+      77.73
+    ],
+    "Persentase rumah tangga yang memiliki akses terhadap sanitasi layak": [
+      0.0,
+      99.97
+    ],
+    "Persentase rumah tangga yang memiliki akses terhadap air minum layak": [
+      0.0,
+      100.0
+    ],
+    "Tingkat Pengangguran Terbuka": [
+      0.0,
+      13.37
+    ],
+    "Tingkat Partisipasi Angkatan Kerja": [
+      56.39,
+      97.93
+    ],
+    "PDRB atas Dasar Harga Konstan menurut Pengeluaran (Rupiah)": [
+      147485.0,
+      460081046.0
+    ]
+  },
+  "default_fitur": {
+    "Rata-rata Lama Sekolah Penduduk 15+ (Tahun)": 8.3,
+    "Pengeluaran per Kapita Disesuaikan (Ribu Rupiah/Orang/Tahun)": 10195.0,
+    "Indeks Pembangunan Manusia": 69.53,
+    "Umur Harapan Hidup (Tahun)": 69.84,
+    "Persentase rumah tangga yang memiliki akses terhadap sanitasi layak": 81.84,
+    "Persentase rumah tangga yang memiliki akses terhadap air minum layak": 89.77,
+    "Tingkat Pengangguran Terbuka": 4.42,
+    "Tingkat Partisipasi Angkatan Kerja": 68.99,
+    "PDRB atas Dasar Harga Konstan menurut Pengeluaran (Rupiah)": 8491499.0
+  },
+  "versi": {
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.3",
+    "numpy": "2.5.0",
+    "joblib": "1.5.3"
+  },
+  "data": {
+    "raw_rows": 999,
+    "usable_rows": 514,
+    "train_rows": 411,
+    "test_rows": 103,
+    "empty_rows_removed": 485,
+    "class_counts": {
+      "0": 452,
+      "1": 62
+    },
+    "training_oversampling": "Random oversampling on training partition only"
+  }
+}

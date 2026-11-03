@@ -1,0 +1,46 @@
+{
+  "provider": "Groq",
+  "model": "qwen/qwen3.8-27b",
+  "temperature": 0,
+  "max_tokens": 30,
+  "features": [
+    "Rata-rata Lama Sekolah Penduduk 15+ (Tahun)",
+    "Pengeluaran per Kapita Disesuaikan (Ribu Rupiah/Orang/Tahun)",
+    "Indeks Pembangunan Manusia",
+    "Umur Harapan Hidup (Tahun)",
+    "Persentase rumah tangga yang memiliki akses terhadap sanitasi layak",
+    "Persentase rumah tangga yang memiliki akses terhadap air minum layak",
+    "Tingkat Pengangguran Terbuka",
+    "Tingkat Partisipasi Angkatan Kerja",
+    "PDRB atas Dasar Harga Konstan menurut Pengeluaran (Rupiah)"
+  ],
+  "label_mapping": {
+    "0": "Tidak Miskin",
+    "1": "Miskin"
+  },
+  "system_prompt": "Anda adalah pengklasifikasi demonstrasi untuk dataset Kaggle Klasifikasi Tingkat Kemiskinan di Indonesia. Perkirakan label dataset berdasarkan sembilan indikator sosial-ekonomi wilayah yang diberikan. Label 0 berarti Tidak Miskin dan label 1 berarti Miskin. Jawab hanya dengan tepat satu label: Tidak Miskin atau Miskin. Jangan memberikan saran kebijakan atau keputusan bantuan sosial.",
+  "evaluasi": {
+    "status": "selesai",
+    "provider": "Groq",
+    "model": "qwen/qwen3.8-27b",
+    "tanggal": "2026-11-03",
+    "n_test": 103,
+    "accuracy": 0.7379,
+    "f1_macro": 0.6385,
+    "invalid": 0,
+    "confusion_matrix": [
+      [
+        65,
+        26
+      ],
+      [
+        1,
+        11
+      ]
+    ],
+    "kelas": [
+      "Tidak Miskin",
+      "Miskin"
+    ]
+  }
+}
